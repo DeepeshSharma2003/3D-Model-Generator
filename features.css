@@ -2,10 +2,10 @@
 .OurFeatures {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 20vh 20vh 20vh;
+    grid-template-rows: 18vh 18vh 18vh;
     background-color: #5d576b;
     /* width: 100vw; */
-    height: 90vh;
+    height: 75vh;
     justify-content: center;
     row-gap: 3vh;
     column-gap: 5vh;
@@ -20,8 +20,32 @@
 }
 
 .features{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    background: #706881 ;
+    
+}
+
+.features h3{
+font-size: 6em;
+color: white;
+}
+
+.features p{
+    font-size: 3em;
+    color: white;
+
+}
+
+.FeatureContent{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 15px;
 }
 
 .FeatureHeading{
@@ -32,3 +56,4 @@
     font-size: 5em;
     color: white;
 }
+

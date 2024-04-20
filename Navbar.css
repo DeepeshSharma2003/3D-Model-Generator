@@ -15,7 +15,7 @@ nav {
     /* width: 100vw; */
     align-items: center;
     justify-content: space-around;
-    /* position: sticky; */
+    
     height: 7vh;
 }
 
@@ -32,8 +32,14 @@ nav {
     text-decoration: none;
     color: #999999;
     font-size: 3.5em;
+    
 }
 .navCenter ul li a:hover {
+    
+    color: black;
+    
+}
+.navCenter ul li a:active {
     
     color: black;
     
@@ -60,6 +66,7 @@ nav {
     font-size: 3em;
     background: #E14747;
     border: 2px solid black;
+    ;
 }
 
 .navLogo h1 {
