@@ -1,101 +1,244 @@
-.ChoosePlans{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 30vh 30vh 30vh 15vh;
-    column-gap: 40px;
-    
+div.ChoosePlans{
+display: flex;
+justify-content: center;
 }
 
-
+.ChooseYourPlan{
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    grid-template-columns: 4vh 1fr 4vh 4vh 1fr 4vh 4vh 1fr 4vh;
+    grid-template-rows: 20vh 20vh 10vh 25vh 10vh 10vh;
+    /* column-gap: 2vw; */
+ 
+}
 
 .ChoosePlanHeading{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-size: 5em;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   row-gap: 15px;
+    grid-column: 5/6;
+    grid-row: 1/2 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    row-gap: 20px;
+   
+   
 }
 .ChoosePlanHeading h6{
-    font-weight: lighter;
+ 
+   font-size: 3em;
+   font-weight: lighter;
+}
+.ChoosePlanHeading h3{
+
+    font-size: 5em;
 }
 
-.FreePlan{
-    grid-column: 1/2;
-    grid-row: 2/4;
-    background-color: #e6ebe0;
-    margin-left: 40px;
-    /* align-items: flex-start; */
-}
-
-.BasicPlan{
+.FreePlanIntro{
     grid-column: 2/3;
-    grid-row: 2/5;
-    background-color: #e6ebe0;
-}
-
-.ProPlan{
-    grid-column: 3/4;
-    grid-row: 2/4;
-    background-color: #e6ebe0;
-    margin-right: 40px;
-}
-
-.PlanHeading h4{
-font-size: 4em;
-margin-left: 40px;
-margin-top: 27px;
-}
-.PlanHeading p{
-font-size: 3em;
-margin-left: 40px;
-margin-top: 20px;
-}
-
-#PriceDollarSign{
-    font-size: 4em;
-    margin-bottom: 8px;
-    margin-left: 40px;
-    margin-top: 60px;
-}
-
-.PlanPrice p{
-    font-size: 10em;
-    margin-left: 0px;
-    margin-top: 7px;
-}
-
-.PlanPrice{
+    grid-row: 2/3;
     display: flex;
-    align-items: end; 
-}
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+  
 
-.PlanInfo p{
-    margin-left: 40px;
-    margin-top: 15px;
+}
+.FreePlanIntro h4{
+   font-size: 4em;
+}
+.FreePlanIntro p{
     font-size: 3em;
 }
 
-.PlanInfo{
-    margin-top: 40px;
+.FreePlanPrice{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    align-items:baseline;
+    background-color: #f79d65;
+
+}
+.FreePlanPrice p{
+   font-size: 3em;
+   display: flex;
+  
+}
+.FreePlanPrice h1{
+    font-size: 10em;
 }
 
-.PlanJoiningbtn{
-    
+.FreePlanContent{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+}
+.FreePlanContent p{
+  font-size: 3em;
+}
+
+.FreePlanBTN{
+    grid-column: 2/3;
+    grid-row: 5/6;
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-top: 35px;
+    background-color: #f79d65; 
 }
 
-.PlanJoiningbtn button{
-    border-radius: 2px;
-    padding: 4px 7px;
-    color: white;
+
+
+
+
+
+
+
+.BasicPlanIntro{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+  
+
+}
+.BasicPlanIntro h4{
+   font-size: 4em;
+}
+.BasicPlanIntro p{
     font-size: 3em;
-    background: #E14747;
-    border: 2px solid black;
 }
 
+.BasicPlanPrice{
+    grid-column: 5/6;
+    grid-row: 3/4;
+    display: flex;
+    align-items:baseline;
+    background-color: #f79d65;
+
+}
+.BasicPlanPrice p{
+   font-size: 3em;
+   display: flex;
+  
+}
+.BasicPlanPrice h1{
+    font-size: 10em;
+}
+
+.BasicPlanContent{
+    grid-column: 5/6;
+    grid-row: 4/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+}
+.BasicPlanContent p{
+  font-size: 3em;
+}
+
+.BasicPlanBTN{
+    grid-column: 5/6;
+    grid-row: 6/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f79d65; 
+}
+
+
+
+
+
+
+
+
+
+
+.ProPlanIntro{
+    grid-column: 8/9;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+  
+
+}
+.ProPlanIntro h4{
+   font-size: 4em;
+}
+.ProPlanIntro p{
+    font-size: 3em;
+}
+
+.ProPlanPrice{
+    grid-column: 8/9;
+    grid-row: 3/4;
+    display: flex;
+    align-items:baseline;
+    background-color: #f79d65;
+
+}
+.ProPlanPrice p{
+   font-size: 3em;
+   display: flex;
+  
+}
+.ProPlanPrice h1{
+    font-size: 10em;
+}
+
+.ProPlanContent{
+    grid-column: 8/9;
+    grid-row: 4/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    background-color: #f79d65;
+}
+.ProPlanContent p{
+  font-size: 3em;
+}
+
+.ProPlanBTN{
+    grid-column: 8/9;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f79d65; 
+}
+
+
+
+.ChooseYourPlanCol1{
+    border:none;
+    background-color: #f79d65;
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
+.ChooseYourPlanCol4{
+    border: none;
+    background-color: #f79d65;
+    grid-column: 4/5;
+    grid-row: 2/7;
+}
+.ChooseYourPlanCol7{
+    border: none;
+    background-color: #f79d65;
+    grid-column: 7/8;
+    grid-row: 2/6;
+}
