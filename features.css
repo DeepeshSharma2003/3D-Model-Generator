@@ -2,9 +2,8 @@
 .OurFeatures {
     display: grid;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 18vh 18vh 18vh;
+    grid-template-rows: 14vh 14vh 14vh;
     background-color: #5d576b;
-    /* width: 100vw; */
     height: 75vh;
     justify-content: center;
     row-gap: 3vh;
@@ -20,14 +19,11 @@
 }
 
 .features{
-    /* border: 2px solid black; */
     gap: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: auto;
     background: #706881 ;
-    
 }
 
 .features h3{
@@ -38,6 +34,7 @@ color: white;
 .features p{
     font-size: 3em;
     color: white;
+    padding-right: 10px;
 
 }
 
@@ -45,7 +42,6 @@ color: white;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-    padding: 15px;
 }
 
 .FeatureHeading{
@@ -55,5 +51,10 @@ color: white;
     align-items: center;
     font-size: 5em;
     color: white;
+}
+
+.FeaturesSVG{
+    display: flex;
+    align-self: flex-start;
 }
 
