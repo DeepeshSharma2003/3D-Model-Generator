@@ -1,6 +1,8 @@
 // import React from 'react'
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import OrangeButton from "./OrangeButton";
+import WhiteButton from "./WhiteButton";
 
 const Navbar = () => {
   return (
@@ -68,12 +70,8 @@ const Navbar = () => {
           </div>
 
           <div className="navRight">
-            <div className="whiteBTN">
-              <button>Login</button>
-            </div>
-            <div className="orangeBTN">
-              <button>Register</button>
-            </div>
+            <WhiteButton />
+            <OrangeButton />
           </div>
         </nav>
       </header>

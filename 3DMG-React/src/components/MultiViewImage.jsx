@@ -2,8 +2,8 @@
 
 const MultiViewImage = () => {
   return (
-    <div>
-      <p>hjbchjdbshblchb</p>
+    <div className="testingpara">
+      <p>Hii, I am Multi View Image Generator</p>
     </div>
   )
 }

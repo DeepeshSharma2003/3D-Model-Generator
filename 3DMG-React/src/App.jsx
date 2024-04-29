@@ -6,6 +6,7 @@ import MultiViewImage from "./components/MultiViewImage";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Login from "./components/Login";
+import Footer from "./components/Footer";
 import ErrorPage from "./error-page";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <>
           <Navbar />
           <Home />
-          
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,
@@ -27,6 +28,7 @@ function App() {
         <>
           <Navbar />
           <ThreeD_ModelGeneration />
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,
@@ -37,6 +39,7 @@ function App() {
         <>
           <Navbar />
           <MultiViewImage />
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,
@@ -47,6 +50,7 @@ function App() {
         <>
           <Navbar />
           <Gallery />
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,
@@ -57,6 +61,7 @@ function App() {
         <>
           <Navbar />
           <About />
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,
@@ -67,6 +72,7 @@ function App() {
         <>
           <Navbar />
           <Login />
+          <Footer/>
         </>
       ),
       errorElement: <ErrorPage />,

@@ -2,9 +2,9 @@
 
 const Gallery = () => {
   return (
-    <div>
-      <p>hsbhgavjcab</p>
-    </div>
+    <div className="testingpara">
+    <p>Hii, I am Gallery</p>
+  </div>
   )
 }
 

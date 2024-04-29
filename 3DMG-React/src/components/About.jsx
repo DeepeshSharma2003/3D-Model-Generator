@@ -2,8 +2,8 @@
 
 const About = () => {
   return (
-    <div>
-      <p>Hii Sital, I am About</p>
+    <div className="testingpara">
+      <p>Hii, I am About Us Page</p>
     </div>
   )
 }
