@@ -17,7 +17,7 @@ function App() {
         <>
           <Navbar />
           <Home />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,
@@ -28,7 +28,7 @@ function App() {
         <>
           <Navbar />
           <ThreeD_ModelGeneration />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,
@@ -39,7 +39,7 @@ function App() {
         <>
           <Navbar />
           <MultiViewImage />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,
@@ -50,7 +50,7 @@ function App() {
         <>
           <Navbar />
           <Gallery />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,
@@ -61,7 +61,7 @@ function App() {
         <>
           <Navbar />
           <About />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,
@@ -72,7 +72,7 @@ function App() {
         <>
           <Navbar />
           <Login />
-          <Footer/>
+          <Footer />
         </>
       ),
       errorElement: <ErrorPage />,

@@ -18,6 +18,8 @@
     text-decoration: none;
     color: #999999;
     font-size: 3.5em;
+    border-radius: 10px;
+    padding: 6px 10px;
 }
 .FooterNavigation  a{
     text-decoration: none;
