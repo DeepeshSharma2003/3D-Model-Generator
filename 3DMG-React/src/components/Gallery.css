@@ -1,0 +1,134 @@
+.Slider {
+  font-size: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.TextTo3DHeading {
+  font-size: 5em;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.TextTo3DContentMainDiv {
+  height: 160vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.TextTo3DContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 72vw;
+  height: 145vh;
+  /* background-color: bisque; */
+  row-gap: 80px;
+  column-gap: 80px;
+}
+
+.TextTo3DElement1{
+ grid-row: 1/2;
+ grid-column: 1/2;
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ border-radius: 10px;
+ /* background-color: blueviolet; */
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+.TextTo3DElement2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    /* background-color: rgb(44, 227, 130); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    /* background-color: rgb(226, 43, 186); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement4{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    /* background-color: rgb(220, 226, 43); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement5{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    /* background-color: rgb(43, 226, 70); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement6{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    /* background-color: rgb(43, 147, 226); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement7{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    /* background-color: rgb(165, 226, 43); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement8{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    /* background-color: rgb(226, 43, 43); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+.TextTo3DElement9{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    /* background-color: rgb(64, 43, 226); */
+    display: flex;
+ justify-content: center;
+ align-items: center;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ border-radius: 10px;
+}
+
+
+.ImageTo3DHeading {
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+  }

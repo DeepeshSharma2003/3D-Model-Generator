@@ -13,12 +13,13 @@
     border-radius: 10px;
     padding-top: 20px;
     width: 15vw;
-    transition: height 0.3s ease-out, transform 0.3s ease-out; 
+    transition: height 0.3s ease-out, transform 0.1s ease-out; 
     height: 50vh;
   }
   
   .ProPlan:hover {
     transform: scale(1.1); 
+
   }
   
 
