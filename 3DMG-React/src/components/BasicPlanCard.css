@@ -30,19 +30,19 @@
 }
 
 #DollarSignPos {
-  font-size: 4em;
+  font-size: 1em;
 }
 
 #PriceToBePaid {
-  font-size: 10em;
+  font-size: 3em;
 }
 
 .BasicPlan h4 {
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .BasicPlan p {
-  font-size: 3em;
+  font-size: 1em;
 }
 
 #PlanParagraphs {
@@ -59,7 +59,7 @@
 }
 
 .BasicPlan.extended {
-  height: 55vh;
+  height: 60vh;
 }
 
 .ButtonContainer {
