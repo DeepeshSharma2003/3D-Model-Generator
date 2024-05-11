@@ -5,7 +5,6 @@ import ThreeD_ModelGeneration from "./components/ThreeD_ModelGeneration";
 import MultiViewImage from "./components/MultiViewImage";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
-import Login from "./components/Login";
 import Footer from "./components/Footer";
 import ErrorPage from "./error-page";
 
@@ -66,17 +65,6 @@ function App() {
       ),
       errorElement: <ErrorPage />,
     },
-    {
-      path: "/login",
-      element: (
-        <>
-          <Navbar />
-          <Login />
-          <Footer />
-        </>
-      ),
-      errorElement: <ErrorPage />,
-    },
   ]);
 
   return (
@@ -87,7 +75,5 @@ function App() {
 }
 
 export default App;
-
-
 
 // https://getcssscan.com/css-box-shadow-examples ----- box shadow designs

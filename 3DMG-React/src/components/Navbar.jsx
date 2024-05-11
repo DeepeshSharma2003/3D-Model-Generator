@@ -1,13 +1,13 @@
-
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import OrangeButton from "./OrangeButton";
 import WhiteButton from "./WhiteButton";
 import { useState, useEffect } from "react";
+import LoginForm from "./LoginForm";
 
 const Navbar = () => {
-
-const [scrolled, setScrolled] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +22,16 @@ const [scrolled, setScrolled] = useState(false);
     };
   }, []);
 
+  const toggleLoginForm = () => {
+    setShowLoginForm(!showLoginForm);
+  };
+
+  const closeLoginForm = () => {
+    setShowLoginForm(false);
+  };
+
   return (
     <>
-
-
       <header className={scrolled ? "scrolled" : ""}>
         <nav>
           <NavLink className="navLogo" to={`/`}>
@@ -75,30 +81,21 @@ const [scrolled, setScrolled] = useState(false);
               }}
               to="/about"
             >
-              <li>About</li>
-            </NavLink>
-
-            <NavLink
-              className={(e) => {
-                return e.isActive ? "NavPageActive" : "";
-              }}
-              to="/login"
-            >
-              <li>Login</li>
+              <li>AboutUs</li>
             </NavLink>
           </div>
 
           <div className="navRight">
-            <WhiteButton />
+            <WhiteButton onClick={toggleLoginForm} />
             <OrangeButton />
           </div>
         </nav>
       </header>
-      
+      {showLoginForm && (
+        <LoginForm onSubmit={closeLoginForm} onClose={closeLoginForm} />
+      )}
     </>
   );
 };
 
 export default Navbar;
-
-

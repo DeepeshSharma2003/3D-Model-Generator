@@ -1,13 +1,16 @@
+import PropTypes from "prop-types";
 import "./WhiteButton.css";
 
-// import React from 'react'
-
-const WhiteButton = () => {
+const WhiteButton = ({ onClick }) => {
   return (
-    <div className="whiteBTN">
+    <div className="whiteBTN" onClick={onClick}>
       <button>Login</button>
     </div>
   );
+};
+
+WhiteButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
 };
 
 export default WhiteButton;
