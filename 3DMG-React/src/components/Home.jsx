@@ -4,6 +4,8 @@ import Cube3DFeatures from "./Cube3DFeatures";
 import FreePlanCard from "./FreePlanCard";
 import BasicPlanCard from "./BasicPlanCard";
 import ProPlanCard from "./ProPlanCard";
+// import { BrowserRouter as Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -16,12 +18,15 @@ const Home = () => {
               <h1>Transforming 2-D into 3-D</h1>
             </div>
             <div className="transformingBTNS">
-              <div className="orangeBTN">
-                <button>Get Started Now</button>
-              </div>
-              <div className="whiteBTN">
-                <button>Learn More &rarr;</button>
-              </div>
+             
+
+<div className="orangeBTN">
+            <Link to="/3-D Model Generation"><button>Get Started Now</button></Link>
+          </div>
+
+          <div className="whiteBTN">
+            <Link to="/learn-more"><button>Learn More &rarr;</button></Link>
+          </div>
             </div>
           </div>
         </div>
@@ -115,6 +120,7 @@ const Home = () => {
             <div className="VCContentBTN orangeBTN">
               <button>Learn More</button>
             </div>
+            
           </div>
         </div>
       </section>

@@ -1,10 +1,10 @@
 
-
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 7vh;
+ background-color: whitesmoke;
 
 }
 
@@ -12,6 +12,7 @@ header{
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: box-shadow 0.3s ease;
 }
 
 .navCenter {
@@ -26,7 +27,7 @@ header{
   border-radius: 10px;
   padding: 6px 10px;
   color: #999999;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .navCenter a {
@@ -45,7 +46,7 @@ header{
 }
 
 .navLogo h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   text-decoration: none;
 }
 
@@ -59,4 +60,13 @@ header{
   color: black;
   background-color: #f8edeb;
   backdrop-filter: blur(50px);
+} 
+
+
+.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+
+
+

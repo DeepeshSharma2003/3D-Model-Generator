@@ -1,13 +1,32 @@
-// import React from 'react'
+
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import OrangeButton from "./OrangeButton";
 import WhiteButton from "./WhiteButton";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+
+const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header>
+
+
+      <header className={scrolled ? "scrolled" : ""}>
         <nav>
           <NavLink className="navLogo" to={`/`}>
             <h1>3DIFY</h1>
@@ -81,3 +100,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
