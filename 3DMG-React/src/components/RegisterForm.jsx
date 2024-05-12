@@ -4,7 +4,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import "./RegisterForm.css";
 
-const RegisterForm = ({ onSubmit, onClose }) => {
+const RegisterForm = ({ onSubmit, onClose, openLoginForm  }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -92,7 +92,7 @@ const RegisterForm = ({ onSubmit, onClose }) => {
             <button type="submit">Register</button>
           </form>
           <p>
-            Already have an account? <a href="#">Login</a>
+            Already have an account? <a href="#" onClick={openLoginForm}>Login</a>
           </p>
         </div>
       </div>
@@ -103,6 +103,7 @@ const RegisterForm = ({ onSubmit, onClose }) => {
 RegisterForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
+  openLoginForm: PropTypes.func.isRequired, 
 };
 
 export default RegisterForm;

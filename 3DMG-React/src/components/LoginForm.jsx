@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import "./LoginForm.css";
 
-const LoginForm = ({ onSubmit, onClose }) => {
+const LoginForm = ({ onSubmit, onClose, openRegisterForm }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -89,7 +89,7 @@ const LoginForm = ({ onSubmit, onClose }) => {
           </form>
           <p className="forgot-password">Forgot password?</p>
           <p>
-            Don&apos;t have an account? <a href="#">Register Now</a>
+            Don&apos;t have an account? <a href="#" onClick={openRegisterForm}>Register Now</a>
           </p>
         </div>
       </div>
@@ -100,6 +100,7 @@ const LoginForm = ({ onSubmit, onClose }) => {
 LoginForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
+  openRegisterForm: PropTypes.func.isRequired, 
 };
 
 export default LoginForm;

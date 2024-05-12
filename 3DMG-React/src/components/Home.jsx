@@ -25,7 +25,7 @@ const Home = () => {
           </div>
 
           <div className="whiteBTN">
-            <Link to="/learn-more"><button>Learn More &rarr;</button></Link>
+            <Link to="/about"><button>Learn More &rarr;</button></Link>
           </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ const Home = () => {
             </div>
 
             <div className="VCContentBTN orangeBTN">
-              <button>Learn More</button>
+            <Link to="/about"><button>Learn More</button></Link>
             </div>
             
           </div>

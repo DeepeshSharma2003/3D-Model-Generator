@@ -24,11 +24,15 @@ const Navbar = () => {
     };
   }, []);
 
+  
+
   const toggleLoginForm = () => {
     setShowLoginForm(!showLoginForm);
+    setShowRegisterForm(false); 
   };
   const toggleRegisterForm = () => {
     setShowRegisterForm(!showRegisterForm);
+    setShowLoginForm(false); 
   };
 
   const closeLoginForm = () => {
@@ -100,14 +104,19 @@ const Navbar = () => {
         </nav>
       </header>
       {showLoginForm && (
-        <LoginForm onSubmit={closeLoginForm} onClose={closeLoginForm} />
+        <LoginForm onSubmit={closeLoginForm} onClose={closeLoginForm} openRegisterForm={toggleRegisterForm}/>
       )}
       {showRegisterForm && (
         <RegisterForm
           onSubmit={closeRegisterForm}
           onClose={closeRegisterForm}
+          openLoginForm={toggleLoginForm}
+
         />
       )}
+
+
+
     </>
   );
 };
