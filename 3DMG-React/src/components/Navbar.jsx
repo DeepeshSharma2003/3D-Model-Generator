@@ -4,9 +4,11 @@ import OrangeButton from "./OrangeButton";
 import WhiteButton from "./WhiteButton";
 import { useState, useEffect } from "react";
 import LoginForm from "./LoginForm";
+import RegisterForm from "./RegisterForm";
 
 const Navbar = () => {
   const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showRegisterForm, setShowRegisterForm] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -25,9 +27,15 @@ const Navbar = () => {
   const toggleLoginForm = () => {
     setShowLoginForm(!showLoginForm);
   };
+  const toggleRegisterForm = () => {
+    setShowRegisterForm(!showRegisterForm);
+  };
 
   const closeLoginForm = () => {
     setShowLoginForm(false);
+  };
+  const closeRegisterForm = () => {
+    setShowRegisterForm(false);
   };
 
   return (
@@ -87,12 +95,18 @@ const Navbar = () => {
 
           <div className="navRight">
             <WhiteButton onClick={toggleLoginForm} />
-            <OrangeButton />
+            <OrangeButton onClick={toggleRegisterForm} />
           </div>
         </nav>
       </header>
       {showLoginForm && (
         <LoginForm onSubmit={closeLoginForm} onClose={closeLoginForm} />
+      )}
+      {showRegisterForm && (
+        <RegisterForm
+          onSubmit={closeRegisterForm}
+          onClose={closeRegisterForm}
+        />
       )}
     </>
   );

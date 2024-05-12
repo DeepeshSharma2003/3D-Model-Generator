@@ -1,11 +1,13 @@
+import "./RegisterForm.css";
+
 import { useState } from "react";
 import PropTypes from "prop-types";
-import "./LoginForm.css";
+import "./RegisterForm.css";
 
-const LoginForm = ({ onSubmit, onClose }) => {
+const RegisterForm = ({ onSubmit, onClose }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -15,13 +17,17 @@ const LoginForm = ({ onSubmit, onClose }) => {
     setPassword(event.target.value);
   };
 
-  const handleRememberMeChange = () => {
-    setRememberMe(!rememberMe);
+  const handleConfirmPasswordChange = (event) => {
+    setConfirmPassword(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit({ email, password, rememberMe });
+    if (password === confirmPassword) {
+      onSubmit({ email, password });
+    } else {
+      alert("Passwords do not match");
+    }
   };
 
   const handleClose = () => {
@@ -34,22 +40,22 @@ const LoginForm = ({ onSubmit, onClose }) => {
 
   return (
     <div className="overlay" onClick={onClose}>
-      <div className="login-form-container" onClick={stopPropagation}>
-        <div className="login-form">
-          <button className="close-button" onClick={handleClose}>
+      <div className="register-form-container" onClick={stopPropagation}>
+        <div className="register-form">
+          <button className="Registerclose-button" onClick={handleClose}>
             X
           </button>
-          <div className="logo-container">
+          <div className="Registerlogo-container">
             <img
               src="/src/assets/LoginLogo.jpg"
               alt="Logo"
-              style={{ width: "150px", height: "100px", borderRadius: '50%' }}
+              style={{ width: "150px", height: "100px", borderRadius: "50%" }}
             />
           </div>
-
-          <h2>Welcome back</h2>
-          <p>Please enter your details to sign in</p>
-          <div className="social-buttons">
+          <h1>WELCOME TO 3DIFY</h1>
+          <h2>Create an Account</h2>
+          <p>Please enter your details to register</p>
+          <div className="Registersocial-buttons">
             <button>
               <img src="/src/assets/GoogleLogo.jpg" alt="Google" />
             </button>
@@ -76,20 +82,17 @@ const LoginForm = ({ onSubmit, onClose }) => {
               onChange={handlePasswordChange}
               required
             />
-            <div className="remember-me">
-              <input
-                type="checkbox"
-                id="remember-me"
-                checked={rememberMe}
-                onChange={handleRememberMeChange}
-              />
-              <label htmlFor="remember-me">Remember for 30 days</label>
-            </div>
-            <button type="submit">Sign in</button>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              value={confirmPassword}
+              onChange={handleConfirmPasswordChange}
+              required
+            />
+            <button type="submit">Register</button>
           </form>
-          <p className="forgot-password">Forgot password?</p>
           <p>
-            Don&apos;t have an account? <a href="#">Register Now</a>
+            Already have an account? <a href="#">Login</a>
           </p>
         </div>
       </div>
@@ -97,9 +100,11 @@ const LoginForm = ({ onSubmit, onClose }) => {
   );
 };
 
-LoginForm.propTypes = {
+RegisterForm.propTypes = {
   onSubmit: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
 };
 
-export default LoginForm;
+export default RegisterForm;
+
+

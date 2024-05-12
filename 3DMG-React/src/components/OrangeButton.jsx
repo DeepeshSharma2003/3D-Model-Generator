@@ -1,14 +1,16 @@
 import "./OrangeButton.css";
+import PropTypes from "prop-types";
 
-// import React from 'react'
-
-const OrangeButton = () => {
+const OrangeButton = ({ onClick }) => {
   return (
-    <div className="orangeBTN">
-    <button>Register</button>
-  </div>
-  )
+    <div className="orangeBTN" onClick={onClick}>
+      <button>Register</button>
+    </div>
+  );
 };
 
-export default OrangeButton
+OrangeButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
+export default OrangeButton;
