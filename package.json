@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@splinetool/react-spline": "^3.1.0",
+    "three": "^0.163.0"
+  }
+}

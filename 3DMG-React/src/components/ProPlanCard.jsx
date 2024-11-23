@@ -1,5 +1,7 @@
 import  { useState, useEffect } from 'react';
 import './ProPlanCard.css'; // Import your CSS file
+import { Link } from "react-router-dom";
+
 
 function ProPlanCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,26 +27,29 @@ function ProPlanCard() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <span id="PlanHeading">
-        <h4>FREE</h4>
-        <p>Access basic features for free</p>
+      <span id="ProPlanHeading">
+        <h4>PRO</h4>
+        <p>Get access to all premium features</p>
       </span>
 
-      <span id="PriceContent">
-        <p id="DollarSignPos">&#36;</p>
-        <h1 id="PriceToBePaid">0</h1>
+      <span id="ProPriceContent">
+        <p id="ProDollarSignPos">&#36;</p>
+        <h1 id="ProPriceToBePaid">19.99</h1>
       </span>
-      <span id="PlanParagraphs">
-        <p>&#10004; Generate 3-D models from 2-D images or text </p>
-        <p>&#10004; Generate multi-view images from 2-D images or text</p>
-        <p>&#10004; Limited model customization options</p>
-        <p>&#10004; Stanbhgd js k cj khs  h t</p>
+      <span id="ProPlanParagraphs">
+        <p>&#10004; All features of BASIC plan </p>
+        <p>&#10004; VIP 3D model generation support</p>
+        <p>&#10004; Exclusive multi-view-image generation features</p>
+        <p>&#10004; Full model customization options</p>
+        <p>&#10004; 24/7 dedicated customer support</p>
       </span>
 
      
       {isExtended && (
         <div className="ButtonContainer">
-          <button>Learn More</button>
+         <Link to="/about">
+                <button>Learn More</button>
+              </Link>
         </div>
       )}
     </div>

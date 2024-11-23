@@ -1,79 +1,106 @@
-.RadioButtonPos {
+
+   .MultiViewMainDiv{
     display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
+  justify-content: center;
+  column-gap: 30px;
+
+background-color: black;
+   }
+
+   .MultiViewRightSection{
+background-color: #FDFFFC;
+border-radius: 5px;
+z-index: 3;
+   }
+
+   .MultiViewLeftSection{
+    z-index: 3;
+   }
   
-  .MultiViewImagesHeading {
-    font-size: 5em;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .ThreeDinput-container {
-    display: flex;
-  
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 20px;
-  
-    width: 60vw;
-    height: 5vh;
-  }
-  
-  .ThreeDinput-field {
-    flex-grow: 1;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 25px;
-    outline: none;
-    font-size: 16px;
-  }
-  
-  .ThreeDgenerate-button {
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 9px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 25px;
-  }
-  
-  .ThreeDInputPos {
-    display: flex;
-    justify-content: center;
-    margin-top: 303px
-  }
-  
-  .RadiobuttonMainDiv {
-    display: flex;
-    border: 1px solid #ccc;
-    background-color: rgb(244, 105, 55);
-    border-radius: 20px;
-    width: 15em;
-    justify-content: center;
-    padding: 5px 5px;
-  }
-  
-  .RadioButton {
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    outline: none;
-    width: 150px;
-    background-color: rgb(244, 105, 55);
-  }
-  
-  .RadioButton.active {
-    padding: 8px 16px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 30px;
-    outline: none;
-    transition: background-color 0.3s ease;
-    width: 200px;
-  }
-  
+ .MultiViewImagesHeading {
+  padding: 0px 10px;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.RadiobuttonMainDiv {
+  display: flex;
+  border: 1px solid #FDFFFC;
+  background-color: #FFBFB7;
+  border-radius: 20px;
+  width: 15em;
+  justify-content: center;
+  padding: 5px 5px;
+}
+
+.RadioButton {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  width: 150px;
+  background-color: #FFBFB7;
+}
+
+.RadioButton.active {
+  padding: 8px 16px;
+  background-color: #FDFFFC;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+
+.MultiViewinput-container {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35vw;
+}
+
+.MultiViewinput-field {
+  flex-grow: 1;
+  padding: 0px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+
+.MultiViewgenerate-button {
+  background-color: #000;
+  color: #FDFFFC;
+  border: none;
+  padding: 9px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.MultiViewInputPos {
+  display: flex;
+  justify-content: center;
+  margin-top: 303px;
+}
+
+
+
+.PlacingMultiViewPageElements{
+  position: relative;
+}
+
+.MultiViewSplineContainer{
+  position: absolute;
+  top: 42%;
+  z-index: 1;
+}

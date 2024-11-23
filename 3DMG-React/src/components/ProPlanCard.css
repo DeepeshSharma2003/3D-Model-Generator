@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tiny5&display=swap');
 
 
 .ProPlan {
@@ -7,7 +9,7 @@
     flex-direction: column;
     margin-left: 40px;
     margin-right: 40px;
-    background-color: #f79d65;
+    background-color: #EEE5E9;
     padding-right: 15px;
     padding-left: 15px;
     border-radius: 10px;
@@ -23,40 +25,59 @@
   }
   
 
-#PriceContent {
+#ProPriceContent {
   display: flex;
   align-items: baseline;
   column-gap: 3px;
   margin-top: 20px;
 }
 
-#DollarSignPos {
+#ProDollarSignPos {
   font-size: 1em;
 }
 
-#PriceToBePaid {
+#ProPriceToBePaid {
   font-size: 3em;
+}
+
+#ProPriceContent p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#ProPriceContent h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .ProPlan h4 {
   font-size: 2em;
+  color: #7C7C7C;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .ProPlan p {
-  font-size: 1em;
+  font-size: 0.8em;
+  color: #7C7C7C;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-#PlanParagraphs {
+#ProPlanParagraphs {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 
-#PlanHeading {
+#ProPlanHeading {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .ProPlan.extended {
@@ -72,8 +93,8 @@
 
 
 .ButtonContainer button {
-    background-color: #fff;
-    color: #f79d65;
+    background-color: #4F5D75;
+    color: #FDFFFC;
     border: 2px black;
     padding: 10px 20px;
     border-radius: 5px;

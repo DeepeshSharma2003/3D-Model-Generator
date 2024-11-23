@@ -13,16 +13,16 @@ const Cube3DFeatures = () => {
         viewBox="-34.8 -34.8 127.60 127.60"
         xmlSpace="preserve"
         fill="#ffffff"
-        stroke="#ffffff"
+        stroke="#847577"
         strokeWidth="3.4799999999999995"
       >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
         <g id="SVGRepo_iconCarrier">
           <g>
-            <polygon style={{ fill: '#5d576b' }} points="29,58 3,45 3,13 29,26 "></polygon>
-            <polygon style={{ fill: '#5d576b' }} points="29,58 55,45 55,13 29,26 "></polygon>
-            <polygon style={{ fill: '#5d576b' }} points="3,13 28,0 55,13 29,26 "></polygon>
+            <polygon style={{ fill: '#ffffff' }} points="29,58 3,45 3,13 29,26 "></polygon>
+            <polygon style={{ fill: '#ffffff' }} points="29,58 55,45 55,13 29,26 "></polygon>
+            <polygon style={{ fill: '#ffffff' }} points="3,13 28,0 55,13 29,26 "></polygon>
           </g>
         </g>
       </svg>

@@ -27,7 +27,7 @@ function App() {
         <>
           <Navbar />
           <ThreeD_ModelGeneration />
-          <Footer />
+          {/* <Footer /> */}
         </>
       ),
       errorElement: <ErrorPage />,
@@ -38,7 +38,7 @@ function App() {
         <>
           <Navbar />
           <MultiViewImage />
-          <Footer />
+          {/* <Footer /> */}
         </>
       ),
       errorElement: <ErrorPage />,

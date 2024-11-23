@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 const OrangeButton = ({ onClick }) => {
   return (
     <div className="orangeBTN" onClick={onClick}>
-      <button>Register</button>
+      <button>Login</button>
     </div>
   );
 };
 
 OrangeButton.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default OrangeButton;

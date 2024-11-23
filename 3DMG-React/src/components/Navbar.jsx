@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import OrangeButton from "./OrangeButton";
-import WhiteButton from "./WhiteButton";
+// import WhiteButton from "./WhiteButton";
 import { useState, useEffect } from "react";
-import LoginForm from "./LoginForm";
-import RegisterForm from "./RegisterForm";
+// import LoginForm from "./LoginForm";
+// import RegisterForm from "./RegisterForm";
 
 const Navbar = () => {
-  const [showLoginForm, setShowLoginForm] = useState(false);
-  const [showRegisterForm, setShowRegisterForm] = useState(false);
+  // const [showLoginForm, setShowLoginForm] = useState(false);
+  // const [showRegisterForm, setShowRegisterForm] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,21 +24,21 @@ const Navbar = () => {
     };
   }, []);
 
-  const toggleLoginForm = () => {
-    setShowLoginForm(!showLoginForm);
-    setShowRegisterForm(false);
-  };
-  const toggleRegisterForm = () => {
-    setShowRegisterForm(!showRegisterForm);
-    setShowLoginForm(false);
-  };
+  // const toggleLoginForm = () => {
+  //   setShowLoginForm(!showLoginForm);
+  //   setShowRegisterForm(false);
+  // };
+  // const toggleRegisterForm = () => {
+  //   setShowRegisterForm(!showRegisterForm);
+  //   setShowLoginForm(false);
+  // };
 
-  const closeLoginForm = () => {
-    setShowLoginForm(false);
-  };
-  const closeRegisterForm = () => {
-    setShowRegisterForm(false);
-  };
+  // const closeLoginForm = () => {
+  //   setShowLoginForm(false);
+  // };
+  // const closeRegisterForm = () => {
+  //   setShowRegisterForm(false);
+  // };
 
   return (
     <>
@@ -96,12 +96,13 @@ const Navbar = () => {
           </div>
 
           <div className="navRight">
-            <WhiteButton onClick={toggleLoginForm} />
-            <OrangeButton onClick={toggleRegisterForm} />
+          <OrangeButton/>
+            {/* <WhiteButton onClick={toggleLoginForm} />
+            <OrangeButton onClick={toggleRegisterForm} /> */}
           </div>
         </nav>
       </header>
-      {showLoginForm && (
+      {/* {showLoginForm && (
         <LoginForm
           onSubmit={closeLoginForm}
           onClose={closeLoginForm}
@@ -114,7 +115,7 @@ const Navbar = () => {
           onClose={closeRegisterForm}
           openLoginForm={toggleLoginForm}
         />
-      )}
+      )} */}
     </>
   );
 };

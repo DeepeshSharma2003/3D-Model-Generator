@@ -1,55 +1,56 @@
-.RadioButtonPos {
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
+ 
+ 
+ .ThreeDModelMainDiv{
   display: flex;
   justify-content: center;
-  margin: 20px;
-}
+  column-gap: 30px;
+  background-color: black;
+  z-index: 2;
+ }
 
-.ThreeDModelHeading {
-  font-size: 5em;
+ .ThreeDModelLeftSection{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+ background-color: #FDFFFC;
+ border-radius: 5px;
+ z-index: 3;
+ }
+
+ .ThreeDModelRightSection{
+  z-index: 3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ }
+
+ .ThreeDModelHeading {
+  font-size: 3em;
   display: flex;
   justify-content: center;
 }
-
-.ThreeDinput-container {
-  display: flex;
-
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 20px;
-
-  width: 60vw;
-  height: 5vh;
+ .ThreeDModelHeading p {
+ color: black;
+ font-family: "Poppins", sans-serif;
+ font-weight: 400;
+ font-style: normal;
 }
-
-.ThreeDinput-field {
-  flex-grow: 1;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 25px;
-  outline: none;
-  font-size: 16px;
-}
-
 .ThreeDgenerate-button {
   background-color: #000;
-  color: #fff;
+  color: #FDFFFC;
   border: none;
   padding: 9px 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
-.ThreeDInputPos {
-  display: flex;
-  justify-content: center;
-  margin-top: 303px;
-}
+
 
 .RadiobuttonMainDiv {
   display: flex;
-  border: 1px solid #ccc;
-  background-color: rgb(244, 105, 55);
+  border: 1px solid #FDFFFC;
+  background-color: #FFBFB7;
   border-radius: 20px;
   width: 15em;
   justify-content: center;
@@ -63,16 +64,66 @@
   border-radius: 30px;
   outline: none;
   width: 150px;
-  background-color: rgb(244, 105, 55);
+  background-color: #FFBFB7;
 }
 
 .RadioButton.active {
   padding: 8px 16px;
-  background-color: white;
+  background-color: #FDFFFC;
   border: none;
   cursor: pointer;
   border-radius: 30px;
   outline: none;
   transition: background-color 0.3s ease;
   width: 200px;
+} 
+
+.ThreeDinput-container {
+  display: flex;
+ 
+  /* align-items: center; */
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 35vw;
+  
 }
+
+
+
+.ThreeDinput-field {
+  flex-grow: 1;
+  padding: 0px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+
+}
+
+
+
+
+.ThreeDInputPos {
+  display: flex;
+  justify-content: center;
+  margin-top: 280px;
+}
+
+.RadioButtonPos {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+
+.PlacingThreeModelPageElements{
+  position: relative;
+}
+
+.ThreeDmodelSplineContainer{
+  position: absolute;
+  top: 48%;
+  z-index: 1;
+}
+
+

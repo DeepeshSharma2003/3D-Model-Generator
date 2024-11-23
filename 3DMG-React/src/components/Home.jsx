@@ -1,34 +1,37 @@
 // import React from 'react'
+// Cors Link - https://cors-anywhere.herokuapp.com/corsdemo
 import "./Home.css";
 import Cube3DFeatures from "./Cube3DFeatures";
 import FreePlanCard from "./FreePlanCard";
 import BasicPlanCard from "./BasicPlanCard";
 import ProPlanCard from "./ProPlanCard";
-// import { BrowserRouter as Link} from 'react-router-dom';
 import { Link } from "react-router-dom";
+import Spline from '@splinetool/react-spline';
 
 
 const Home = () => {
   return (
     <>
-      <main>
-        <div className="transformingMainDiv">
-          <div className="transforming ">
-            <div className="transformingTXT ">
-              <h1>Transforming 2-D into 3-D</h1>
+     <main>
+      <div className="OurRobot">
+          <div className="SplineContainer">
+          <Spline scene="https://prod.spline.design/lhF-PMx2BriqqCEL/scene.splinecode" />
+          </div>
+          <div className="HomeButtonContainerMainDiv">
+          <div className="HomeButtonsContainer">
+            <div className="">
+              <Link to="/3-D Model Generation">
+                <button className="glow-on-hover">Generate 3D Model</button>
+              </Link>
             </div>
-            <div className="transformingBTNS">
-             
-
-<div className="orangeBTN">
-            <Link to="/3-D Model Generation"><button>Get Started Now</button></Link>
+            <div className="">
+              <Link to="/Multi-View Image Generation">
+                <button className="glow-on-hover" >Generate Multi View Images</button>
+              </Link>
+            </div> 
           </div>
-
-          <div className="whiteBTN">
-            <Link to="/about"><button>Learn More &rarr;</button></Link>
           </div>
-            </div>
-          </div>
+          
         </div>
       </main>
 
@@ -98,7 +101,7 @@ const Home = () => {
           <div className="ChooseYourPLans">
             <div className="ChooseYourPlansHeading">
               <h3>Pricing</h3>
-              <h1>Choose Your PLan</h1>
+              <h1>Choose Your Plan</h1>
             </div>
 
             <FreePlanCard />
@@ -111,6 +114,12 @@ const Home = () => {
       </section>
 
       <section>
+<div className="PlacingRevolutionizeElements">
+
+<div className="RevolutionizeSpline">
+<Spline scene="https://prod.spline.design/pocamnLWzxCeU1bY/scene.splinecode" />
+</div>
+
         <div className="LearnMoreVCMainDiv">
           <div className="LearnMoreVC">
             <div className="VCContentHeading">
@@ -118,11 +127,15 @@ const Home = () => {
             </div>
 
             <div className="VCContentBTN orangeBTN">
-            <Link to="/about"><button>Learn More</button></Link>
+              <Link to="/about">
+                <button>Learn More</button>
+              </Link>
             </div>
-            
           </div>
         </div>
+
+</div>
+
       </section>
 
       <article>

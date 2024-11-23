@@ -3,8 +3,8 @@ import "./WhiteButton.css";
 
 const WhiteButton = ({ onClick }) => {
   return (
-    <div className="whiteBTN" onClick={onClick}>
-      <button>Login</button>
+    <div className="glow-on-hover" onClick={onClick}>
+      <button></button>
     </div>
   );
 };

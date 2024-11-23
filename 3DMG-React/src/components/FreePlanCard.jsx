@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./FreePlanCard.css";
+import { Link } from "react-router-dom";
 
 function FreePlanCard() {
   const [isHovered, setIsHovered] = useState(false);
@@ -41,7 +42,9 @@ function FreePlanCard() {
 
       {isExtended && (
         <div className="ButtonContainer">
-          <button>Learn More</button>
+         <Link to="/about">
+                <button>Learn More</button>
+              </Link>
         </div>
       )}
     </div>
